@@ -140,6 +140,17 @@
 * [x] Изучить язык Malbolge
 * [ ] Изучить язык Python
 
+## Заметки
+Что бы сделать push от другого пользователя необходимо выполнить команду
+```sh
+GIT_SSH_COMMAND='ssh -i ~/.ssh/user-private-key -o IdentitiesOnly=yes' git push git@github.com:gulden-geekbrains/version_control.git
+```
+вместо *user-private-key* подставьте свой ключ
+Можно прописать настройки для подсоединения по ssh
+```sh
+git config remote.origin.url git@github.com:gitusername/reponame
+git config core.sshCommand "ssh -i ~/.ssh/user-private-key -o IdentitiesOnly=yes"
+```
 
 ## Обучения pull request 
 1. Делаем fork репозитория, в которой потом хотим сделать pull request. Ищем кнопку Fork на странице репозитория 
